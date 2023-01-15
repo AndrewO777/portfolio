@@ -1,6 +1,7 @@
 <template>
 <h2>Contact Me</h2>
 <hr/>
+<h3 style="color:red;">This page is currently not functioning</h3>
 <form>
 	<label for="name">Name:</label>
 	<input type="text" id="name" name="name">
