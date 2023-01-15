@@ -3,10 +3,8 @@
 	<hr/>
 	<h3>Montjoy</h3>
 	<p>Montjoy is the project I've spent the most time on. It is an app where you can request live video streams from the streamers registered with the app from anywhere. I added the video streaming and searching functionality to the app as well as a page where you can download the recordings of past streams. I also created a few of the pages in the app. The app was created with Xamarin.Forms the backend server is a Node server with Express and it uses a MySQL database.</p>
-	<img style="display: none;" src="/" class="images">
 	<h3>Linguicity</h3>
 	<p></p>
-	<img style="display: none;" src="/" class="images">
 	<h3>Text-based Adventure Game</h3>
 	<p>I made this game in C++ for a school project, the name of the game is Cult and the download is available on github the link is on the project downloads page. The game is a little bit like Zork, except I made it with random generation for all the enemies, items, rooms, and objects in the rooms. The game uses pointers for keeping track of the rooms. There are many classes for the different parts, for example, the player, enemies, items, the map, etc. </p>
 	<img src="/cult.png" class="images">
