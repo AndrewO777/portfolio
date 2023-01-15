@@ -45,7 +45,7 @@ hr {
 	margin-left: 14em;
 	margin-top: 0;
 	border-radius: 2em;
-	height: 400em;
+	height: 100%;
 	padding: 1em;
 	padding-bottom: 2em;
 	background: rgba(0,0,0,.5);
@@ -55,6 +55,14 @@ hr {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
+}
+.popupImage {
+	width: 100%;
+}
+button {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 .image_text {
 	font-size: 1em;
@@ -82,7 +90,6 @@ header {
 #navbar {
 	display: block;
 	width: 12em;
-	max-width: 20%;
 	margin-right: 0;
 	padding-top: 1em;
 	padding-left: .5em;

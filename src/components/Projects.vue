@@ -1,4 +1,25 @@
+<script>
+export default{
+	data(){
+		return {
+			cultpopup: false
+		}
+	},
+	methods: {
+		PopupImage(img){
+			if (img == 0){
+				this.cultpopup = !this.cultpopup;
+			}
+		}
+	}
+}
+</script>
 <template>
+<div v-if="cultpopup">
+	<img src="/cult.png" class="popupImage">
+	<button @click="PopupImage(0)">Close me</button>
+</div>
+<div v-if="!cultpopup">
 	<h2>Projects</h2>
 	<hr/>
 	<h3>Montjoy</h3>
@@ -7,5 +28,6 @@
 	<p></p>
 	<h3>Text-based Adventure Game</h3>
 	<p>I made this game in C++ for a school project, the name of the game is Cult and the download is available on github the link is on the project downloads page. The game is a little bit like Zork, except I made it with random generation for all the enemies, items, rooms, and objects in the rooms. The game uses pointers for keeping track of the rooms. There are many classes for the different parts, for example, the player, enemies, items, the map, etc. </p>
-	<img src="/cult.png" class="images">
+	<img @click="PopupImage(0)" src="/cult.png" class="images">
+</div>
 </template>
