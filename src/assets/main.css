@@ -15,11 +15,13 @@ h1, h2, h3, p, li, label{
 	color: rgb(160,180,190);
 }
 h1 {
-	font-size: 2.4em;
+	font-size: 1.6em;
 	display: inline-block;
 	margin: auto;
-	padding-top: .8em;
+	padding-left: .75em;
 	vertical-align: top;
+	font-family: "Brush Script MT", cursive;
+	color: rgb(130,180,240);
 }
 h2 {
 	font-size: 2em;
@@ -76,6 +78,8 @@ header {
 }
 .mylogo {
 	padding: 1em;
+	padding-bottom: 0;
+	display: block;
 	width: 160px;
 }
 #title {
