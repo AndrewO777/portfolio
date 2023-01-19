@@ -2,13 +2,17 @@
 export default{
 	data(){
 		return {
-			cultpopup: false
+			cultpopup: false,
+			montjoySearchPopup: false
 		}
 	},
 	methods: {
 		PopupImage(img){
 			if (img == 0){
 				this.cultpopup = !this.cultpopup;
+			}
+			else if (img == 1){
+				this.montjoySearchPopup = !this.montjoySearchPopup;
 			}
 		}
 	}
@@ -19,11 +23,16 @@ export default{
 	<img src="/cult.png" class="popupImage">
 	<button @click="PopupImage(0)">Close me</button>
 </div>
-<div v-if="!cultpopup">
+<div v-if="montjoySearchPopup">
+	<img src="/montjoy_search.jpg" class="popupImage">
+	<button @click="PopupImage(1)">Close me</button>
+</div>
+<div v-if="!cultpopup && !montjoySearchPopup">
 	<h2>Projects</h2>
 	<hr/>
 	<h3>Montjoy</h3>
 	<p>Montjoy is the project I've spent the most time on. It is an app where you can request live video streams from the streamers registered with the app from anywhere. I added the video streaming and searching functionality to the app as well as a page where you can download the recordings of past streams. I also created a few of the pages in the app. The app was created with Xamarin.Forms the backend server is a Node server with Express and it uses a MySQL database.</p>
+	<img @click="PopupImage(1)" src="/montjoy_search.jpg" class="images" style="width:25%">
 	<h3>Linguicity</h3>
 	<p></p>
 	<h3>Text-based Adventure Game</h3>
