@@ -56,7 +56,8 @@ export default{
   </header>
 
   <main>
-	  <Navbar @projects-clicked="ProjectsClicked" @about-clicked="AboutClicked" @project-downloads-clicked="ProjectDownloadsClicked" @contact-clicked="ContactClicked"/>
+	<Navbar @projects-clicked="ProjectsClicked" @about-clicked="AboutClicked" @project-downloads-clicked="ProjectDownloadsClicked" @contact-clicked="ContactClicked"/>
+	<div style="height: 1em"></div>
 	<div id="content">
 		<About v-if="about"/>
 		<Projects v-if="projects"/>

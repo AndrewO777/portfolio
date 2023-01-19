@@ -1,5 +1,5 @@
 <template>
 <div id="title">
-	<h1>Andrew's Portfolio</h1>
+	<img src="/Logo.png" class="mylogo">
 </div>
 </template>
