@@ -8,7 +8,6 @@
 		methods: {
 			ImageClicked(){
 				this.img = !this.img;
-				console.log("works");
 			}
 		}
 	}
