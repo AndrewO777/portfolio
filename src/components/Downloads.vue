@@ -36,5 +36,6 @@ export default{
 	<h3><a href="https://github.com/AndrewO777">My github</a></h3>
 	<h3><a href="https://github.com/AndrewO777/portfolio">This Website</a></h3>
 	<h3><a href="https://github.com/AndrewO777/cult-game-repo">Cult</a></h3>
+	<h3><a href="https://github.com/AndrewO777/ChatApp">Chat App</a></h3>
 </div>
 </template>
