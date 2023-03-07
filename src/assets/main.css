@@ -40,6 +40,12 @@ h3, p {
 h2,p,li,label,h3 {
 	text-align: center;
 }
+a {
+	color: rgb(130,180,240);
+}
+a:visited {
+	color: rgb(70,90,160);
+}
 hr {
 	margin-bottom: .5em;
 	color: rgb(160,180,190);
@@ -128,12 +134,18 @@ header {
 }
 #navbar ul li:hover {
 	/*background-color: rgb(130,180,240);*/
+	transition: all 0.5s ease;
 	cursor: pointer;
 	border-radius: 9px;
 	color: #222;
 }
+#navbar ul li::after {
+	box-shadow: 385px -2px 0 #222;
+	content: "";
+}
 #navbar ul li:hover::after {
-	box-shadow: 385px -2px 20px rgb(130,180,240);
+	transition: all 0.5s ease;
+	box-shadow: 385px -2px 25px rgb(130,180,240);
 	background: transparent;
 	content: "";
 	height: 100%;
