@@ -7,12 +7,15 @@ html {
 }
 body {
 	height: 100%;
-	font-family: Roboto, Oxygen, Ubuntu, sans-serif;
+	font-family: Roboto, sans-serif;
 }
 #app, main {
 }
 h1, h2, h3, p, li, label{
 	color: rgb(160,180,190);
+}
+h1,h2,h3 {
+	font-family: Pacifico, cursive;
 }
 h1 {
 	font-size: 1.6em;
@@ -20,7 +23,6 @@ h1 {
 	margin: auto;
 	padding-left: .75em;
 	vertical-align: top;
-	font-family: "Brush Script MT", cursive;
 	color: rgb(130,180,240);
 }
 h2 {
@@ -50,7 +52,7 @@ hr {
 	height: 100%;
 	padding: 1em;
 	padding-bottom: 2em;
-	background: rgba(0,0,0,.5);
+	background: #111;
 }
 .images {
 	width: 75%;
@@ -121,11 +123,24 @@ header {
 	padding: 1%;
 	padding-top: 8px;
 	font-size: 1.3em;
+	z-index: 1;
+	position: relative;
 }
 #navbar ul li:hover {
-	background-color: rgb(130,180,240);
+	/*background-color: rgb(130,180,240);*/
+	cursor: pointer;
 	border-radius: 9px;
 	color: #222;
+}
+#navbar ul li:hover::after {
+	box-shadow: 385px -2px 20px rgb(130,180,240);
+	background: transparent;
+	content: "";
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	left: -200%;
+	width: 100%;
 }
 /* Form */
 label {
