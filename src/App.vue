@@ -60,6 +60,7 @@ export default{
 	<div style="height: 1em"></div>
 	<div id="content">
 		<p>Link to subdomain <a href="https://rwd-examples.andrewodom.net">rwd-examples.andrewodom.net</a></p>
+        <p>Link to accounting question game <a href="https://accounting-game.andrewodom.net">accounting-game.andrewodom.net</a></p>
 		<About v-if="about"/>
 		<Projects v-if="projects"/>
 		<Downloads v-if="downloads"/>
