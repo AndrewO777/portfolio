@@ -52,15 +52,15 @@ export default{
 </script>
 <template>
   <header>
-	<Titlebar/>
   </header>
 
   <main>
 	<Navbar @projects-clicked="ProjectsClicked" @about-clicked="AboutClicked" @project-downloads-clicked="ProjectDownloadsClicked" @contact-clicked="ContactClicked"/>
 	<div style="height: 1em"></div>
 	<div id="content">
-		<p>Link to subdomain <a href="https://rwd-examples.andrewodom.net">rwd-examples.andrewodom.net</a></p>
-        <p>Link to accounting question game <a href="https://accounting-game.andrewodom.net">accounting-game.andrewodom.net</a></p>
+		<!--<p>Link to subdomain <a href="https://rwd-examples.andrewodom.net">rwd-examples.andrewodom.net</a></p>
+        <p>Link to accounting question game <a href="https://accounting-game.andrewodom.net">accounting-game.andrewodom.net</a></p>-->
+        <!--Leaving that as a comment for future reference-->
 		<About v-if="about"/>
 		<Projects v-if="projects"/>
 		<Downloads v-if="downloads"/>
