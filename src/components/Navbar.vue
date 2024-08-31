@@ -3,7 +3,7 @@
 <template>
 <nav id="navbar">
     <div id="title">
-        <img src="/Logo.png" class="mylogo">
+        <!--<img src="/Logo.png" class="mylogo">-->
         <h1>Andrew Odom</h1>
     </div>
 	<ul>

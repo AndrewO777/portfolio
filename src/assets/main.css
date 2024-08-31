@@ -9,8 +9,6 @@ body {
 	height: 100%;
 	font-family: Roboto, sans-serif;
 }
-#app, main {
-}
 h1, h2, h3, p, li, label{
 	color: rgb(160,180,190);
 }
@@ -53,7 +51,7 @@ hr {
 #content {
 	margin: 1em;
 	margin-left: 14em;
-	margin-top: 0;
+	margin-top: 1em;
 	border-radius: 2em;
 	height: 100%;
 	padding: 1em;
@@ -65,9 +63,6 @@ hr {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-}
-.popupImage {
-	width: 100%;
 }
 button {
 	display: block;
@@ -103,6 +98,9 @@ header {
 	margin-right: 1em;
 }
 /* Navbar */
+#mobile-navbar {
+    display: none;
+}
 #navbar {
 	display: block;
 	width: 12em;
@@ -115,10 +113,10 @@ header {
 	height: 100%;
 	position: fixed;
 }
-#navbar h2 {
+#navbar h2, #mobile-navbar h2 {
 	text-align: center;
 }
-#navbar ul {
+#navbar ul, #mobile-navbar ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -153,6 +151,48 @@ header {
 	z-index: -1;
 	left: -200%;
 	width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    #navbar {
+        display: none;
+    }
+    #mobile-navbar {
+        display: block;
+    }
+    #content {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 479px) {
+        body { font-size: 90%; }
+}
+.nav-button {
+    width:40px;
+    height:28px;
+    display:inline-block;
+    border:2px solid #777;
+    border-radius:10px;
+    margin:0;
+}
+.nav-button:hover {
+
+    transition: all 0.7s ease;
+    background-color: rgb(130,180,240);
+    border-color: rgb(130,180,240);
+}
+#mobile-navbar ul li {
+    text-align:left;
+    margin:.8em;
+    margin-left:1.4em;
+    width:150px;
+}
+#mobile-navbar ul li:hover{
+    transition: all 0.5s ease;
+    background-color: rgb(130,180,240);
+    border-radius: 9px;
+    color: #222;
+    padding:.5em;
+    cursor:pointer;
 }
 /* Form */
 label {

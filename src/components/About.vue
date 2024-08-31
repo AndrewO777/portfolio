@@ -1,27 +1,9 @@
-<script>
-	export default {
-		data() {
-			return {
-				img: false
-			}
-		},
-		methods: {
-			ImageClicked(){
-				this.img = !this.img;
-			}
-		}
-	}
-</script>
 <template>
-<div v-if="img">
-	<img class="popupImage" src="/neofetch2.png">
-	<button @click="ImageClicked">Close me</button>
-</div>
-<div v-if="!img">
+<div>
 <h2>About me</h2>
 <hr/>
 <p>Hi, I'm Andrew. I'm a full stack software developer. I am familiar with many programming languages frameworks and tools for example: Vue (which I built this site with), React, Svelte, JavaScript, HTML, CSS, C++/C, Unrealscript, C#, Python, Java, Xamarin.Forms, .NET MAUI, Unity, Unreal Engine 3, Unreal Engine 5 and Node.js. I also am very familiar with Apache, NGINX and Linux. I actually use Arch linux as my desktop's operating system, but I've used many other distros like Gentoo and Ubuntu, this server is actually running on an Ubuntu server right now.</p>
-<img src="/neofetch2.png" class="images" alt="Neofetch of my desktop with Gentoo Linux" @click="ImageClicked">
+<img src="/neofetch2.png" class="images" alt="Neofetch of my desktop with Gentoo Linux">
 <p class="image_text">This is a neofetch of my desktop when I was using Gentoo Linux</p>
 <p>I am currenting working as a software developer at <a href="https://chromatic.games/">Chromatic Games</a>.
 At Chromatic Games I've worked on many different things within the company, such as Dungeon Defenders 2, our backends for our games, an internal dashboard for one of the backends, and an unreleased Unreal Engine 5 project.

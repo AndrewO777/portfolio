@@ -1,6 +1,7 @@
 <script>
 import About from "./components/About.vue"
 import Navbar from "./components/Navbar.vue"
+import MobileNavbar from "./components/MobileNavbar.vue"
 import Titlebar from "./components/Titlebar.vue"
 import Projects from "./components/Projects.vue"
 import Downloads from "./components/Downloads.vue"
@@ -9,6 +10,7 @@ export default{
 	components: {
 		About,
 		Navbar,
+        MobileNavbar,
 		Titlebar,
 		Projects,
 		Downloads,
@@ -55,8 +57,9 @@ export default{
   </header>
 
   <main>
+    <MobileNavbar @projects-clicked="ProjectsClicked" @about-clicked="AboutClicked" @project-downloads-clicked="ProjectDownloadsClicked" @contact-clicked="ContactClicked"/>
 	<Navbar @projects-clicked="ProjectsClicked" @about-clicked="AboutClicked" @project-downloads-clicked="ProjectDownloadsClicked" @contact-clicked="ContactClicked"/>
-	<div style="height: 1em"></div>
+    <!--<div style="height: 1em"></div>-->
 	<div id="content">
 		<!--<p>Link to subdomain <a href="https://rwd-examples.andrewodom.net">rwd-examples.andrewodom.net</a></p>
         <p>Link to accounting question game <a href="https://accounting-game.andrewodom.net">accounting-game.andrewodom.net</a></p>-->
